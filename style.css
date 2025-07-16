@@ -102,14 +102,23 @@ h6 {
   isolation: isolate;
 }
 
+html,
 body {
   display: flex;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#leftSide {
+  width: 50%;
+  height: 600px;
+  position: relative;
 }
 
 #background-img {
-  width: 25%;
-  height: 600px;
-  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #imgTitle {
@@ -118,7 +127,7 @@ body {
   align-items: center;
   position: absolute;
   top: 100px;
-  width: 25%;
+  width: 100%;
   height: 80px;
   background: rgba(0, 0, 0, 0.46);
   gap: 20px;
@@ -149,7 +158,7 @@ body {
 }
 
 #formInfo {
-  font-family: montserratbolf;
+  font-family: montserratbold;
   margin-top: 30px;
   margin-left: 30px;
 }
@@ -171,7 +180,8 @@ form {
 
 input {
   border-radius: 5px;
-  border-color: #CECECE;
+  
+  border: 3px solid #CECECE;
 }
 
 input:focus {
@@ -180,7 +190,7 @@ input:focus {
 }
 
 input:invalid {
-  outline-color: darkred;
+  outline-color: red;
 }
 
 .first-2 {
@@ -211,6 +221,14 @@ input:invalid {
   margin-right: 70px;
 }
 
+label {
+  font-family: montserratbold;
+}
+
+span {
+  font-family: montserratregular;
+}
+
 button {
   border: none;
   border-radius: 10px;
@@ -219,4 +237,69 @@ button {
   padding: 15px;
   margin-top: 50px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  
+  #leftSide {
+    width: 100%;
+    height: 200px;
+  }
+  
+  #background-img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #imgTitle {
+    top: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+  
+  #logo {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #logo+span {
+    font-size: 24px;
+  }
+  
+  #signup {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+  
+  .first-2,
+  .second-2,
+  .third-2 {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  #firstName,
+  #email,
+  #firstPass {
+    margin-right: 0;
+  }
+  
+  form {
+    padding: 20px;
+    height: auto;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+  }
+  
+  #afterForm {
+    margin: 20px 0;
+  }
 }

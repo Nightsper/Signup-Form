@@ -4,74 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <title>Signup Form</title>
 </head>
 
 <body>
-
-<img id="background-img" src="images/background-image.jpg" alt="green leaf plant in close up photography">
-
-<div id="imgTitle">
-  <img id="logo" src="images/odin-logo.png">
-  <span>Haven</span>
-</div>
-
-<div id="signup">
-<div id="formInfo">
+  <div id="leftSide">
+  <img id="background-img" src="images/background-image.jpg" alt="green leaf plant in close up photography">
   
-<p>Thank you for your interest in providing a loving and stable home to a child in need. Please complete it with the following information. Your journey towards building a family begins here.</p>
-</div>
-
-<div id="formCard">
-  <form method="get" id="form">
-    <h2>Adoption Form</h2>
-
-    <div class="first-2">
-      <div class="inputs">
-        <label for="firstName">First Name </label>
-        <input type="text" name="first-name" id="firstName" required />
-      </div>
-
-      <div class="inputs">
-        <label for="lastName">Last Name </label>
-        <input type="text" name="last-name" id="lastName" required />
-      </div>
+  <div id="imgTitle">
+    <img id="logo" src="images/odin-logo.png">
+    <span>Haven</span>
+  </div>
+  </div>
+  
+  <div id="signup">
+    <div id="formInfo">
+      
+      <p>Thank you for your interest in providing a loving and stable home to a child in need. Please complete it with the following information. Your journey towards building a family begins here.</p>
     </div>
-
-    <div class="second-2">
-      <div class="inputs">
-        <label for="email">Email </label>
-        <input type="email" name="email" id="email" />
-      </div>
-      <div class="inputs">
-        <label for="phoneNum">Phone Number </label>
-        <input type="number" name="phone-number" id="phoneNum" />
-      </div>
+    
+    <div id="formCard">
+      <form method="get" id="form">
+        <h2>Adoption Form</h2>
+        
+        <div class="first-2">
+          <div class="inputs">
+            <label for="firstName">First Name </label>
+            <input type="text" name="first-name" id="firstName" required />
+          </div>
+          
+          <div class="inputs">
+            <label for="lastName">Last Name </label>
+            <input type="text" name="last-name" id="lastName" required />
+          </div>
+        </div>
+        
+        <div class="second-2">
+          <div class="inputs">
+            <label for="email">Email <span>(optional)</span></label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="inputs">
+            <label for="phoneNum">Phone Number <span>(optional)</span></label>
+            <input type="number" name="phone-number" id="phoneNum" />
+          </div>
+        </div>
+        
+        <div class="third-2">
+          <div class="inputs">
+            <label for="firstPass">Password </label>
+            <input type="password" name="Password" id="firstPass" minlength="6" required />
+          </div>
+          <div class="inputs">
+            <label for="lastPass">Confirm Password </label>
+            <input type="password" name="Password" id="lastPass" minlength="6" required />
+          </div>
+        </div>
+        
+        <div>
+          <button type="submit">Submit Application</button>
+        </div>
+      </form>
     </div>
-
-    <div class="third-2">
-      <div class="inputs">
-        <label for="firstPass">Password </label>
-        <input type="password" name="Password" id="firstPass" minlength="6" required />
-      </div>
-      <div class="inputs">
-        <label for="lastPass">Confirm Password </label>
-        <input type="password" name="Password" id="lastPass" minlength="6" required />
-      </div>
-    </div>
-
-    <div>
-      <a href="images/mp4.mp4"><button type="submit">Submit Application</button></a>
-    </div>
-  </form>
-</div>
-<div id="afterForm">
-  <p>Already have an account? <a href="">Log in</a></p>
+    <div id="afterForm">
+      <p>Already have an account? <a href="">Log in</a></p>
     </div>
   </div>
   
   <script src="script.js"></script>
-  </body>
-  
-  </html>
+</body>
+
+</html>
