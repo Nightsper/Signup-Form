@@ -1,32 +1,34 @@
 @font-face {
-    font-family: 'montserratregular';
-    src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
-         url('fonts/montserrat-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'montserratregular';
+  src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
 }
 
 @font-face {
-    font-family: 'montserratbold';
-    src: url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
-         url('fonts/montserrat-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'montserratbold';
+  src: url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
 }
 
 @font-face {
-    font-family: 'norsebold';
-    src: url('fonts/norsebold-webfont.woff2') format('woff2'),
-         url('fonts/norsebold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'norsebold';
+  src: url('fonts/norsebold-webfont.woff2') format('woff2'),
+    url('fonts/norsebold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
 }
 
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -50,18 +52,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -69,14 +84,21 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -84,7 +106,7 @@ body {
   display: flex;
 }
 
-#background-img{
+#background-img {
   width: 25%;
   height: 600px;
   position: relative;
@@ -95,8 +117,9 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50px;
+  top: 100px;
   width: 25%;
+  height: 80px;
   background: rgba(0, 0, 0, 0.46);
   gap: 20px;
 }
@@ -106,7 +129,7 @@ body {
   height: 50px;
 }
 
-#logo + span {
+#logo+span {
   color: whitesmoke;
   font-size: 30px;
   font-family: norsebold;
@@ -120,7 +143,80 @@ body {
   font-family: montserratregular;
   background-color: #F9F9F9;
   display: flex;
-  justify-content: center;
+  gap: 30px;
   flex-direction: column;
-  padding-left: 30px;
+  height: 600px;
+}
+
+#formInfo {
+  font-family: montserratbolf;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+#afterForm {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+form {
+  padding: 30px 40px 30px 30px;
+  height: 305px;
+}
+
+#formCard {
+  background-color: #FFFFFF;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input {
+  border-radius: 5px;
+  border-color: #CECECE;
+}
+
+input:focus {
+  outline-color: darkblue;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input:invalid {
+  outline-color: darkred;
+}
+
+.first-2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.second-2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.third-2 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+#firstName,
+#email,
+#firstPass {
+  margin-right: 70px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  background-color: #596D48;
+  color: whitesmoke;
+  padding: 15px;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }

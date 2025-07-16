@@ -14,45 +14,64 @@
 
 <div id="imgTitle">
   <img id="logo" src="images/odin-logo.png">
-  <span>Odin</span>
+  <span>Haven</span>
 </div>
 
 <div id="signup">
 <div id="formInfo">
   
-<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget rutrum tortor, sed malesuada  venenatis semper.</strong></p>
-
-<p><strong>hd to is fm</strong></p>
+<p>Thank you for your interest in providing a loving and stable home to a child in need. Please complete it with the following information. Your journey towards building a family begins here.</p>
 </div>
-<div id="form">
-<form method="get">
-  <div id="formCard">
-  <h2>Adoption Form</h2>
-  
-  <label for="firstName">First Name </label>
-  <input type="text" name="first-name" id="firstName"/>
-  
-    <label for="lastName">Last Name </label>
-  <input type="text" name="last-name" id="lastName"/>
-  
-  <label for="email">Email </label>
-  <input type="email" name="email" id="email"/>
-  
-  <label for="phoneNum">Phone Number </label>
-  <input type="number" name="phone-number" id="phoneNum">
-  
-  <label for="firstPass">Password </label>
-  <input type="password" name="Password" id="firstPass"/>
-  
-    <label for="lastPass">Comfirm Password </label>
-  <input type="password" name="Password" id="lastPass" />
+
+<div id="formCard">
+  <form method="get" id="form">
+    <h2>Adoption Form</h2>
+
+    <div class="first-2">
+      <div class="inputs">
+        <label for="firstName">First Name </label>
+        <input type="text" name="first-name" id="firstName" required />
+      </div>
+
+      <div class="inputs">
+        <label for="lastName">Last Name </label>
+        <input type="text" name="last-name" id="lastName" required />
+      </div>
+    </div>
+
+    <div class="second-2">
+      <div class="inputs">
+        <label for="email">Email </label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="inputs">
+        <label for="phoneNum">Phone Number </label>
+        <input type="number" name="phone-number" id="phoneNum" />
+      </div>
+    </div>
+
+    <div class="third-2">
+      <div class="inputs">
+        <label for="firstPass">Password </label>
+        <input type="password" name="Password" id="firstPass" minlength="6" required />
+      </div>
+      <div class="inputs">
+        <label for="lastPass">Confirm Password </label>
+        <input type="password" name="Password" id="lastPass" minlength="6" required />
+      </div>
+    </div>
+
+    <div>
+      <a href="images/mp4.mp4"><button type="submit">Submit Application</button></a>
+    </div>
+  </form>
+</div>
+<div id="afterForm">
+  <p>Already have an account? <a href="">Log in</a></p>
+    </div>
   </div>
-  <button type="submit">Submit Application</button>
-</form>
-</div>
-<p>Already have an account? <a href="">Log in</a></p>
-</div>
-
-</body>
-
-</html>
+  
+  <script src="script.js"></script>
+  </body>
+  
+  </html>
